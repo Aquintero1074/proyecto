@@ -1,37 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url(mediaqueries.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: "roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.img-logo{
+    width: 10em;
+    height: 10em;
+    border-radius: 4em;
 }
 .hero{
     width: 100vw;
-    height: 100vh;
-    background-image: url(../img/imagen2.jpg);
+    height: 90vh;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: cover;
     max-width: 100%;
 }
-navbar{
+.navbar{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     padding: 30px;
 }
-.navbar.menu{
+.navbar .brand{
+    color: darkorange;
+}
+.navbar .menu{
     grid-column: 6/9;
     display: flex;
     margin-top: 12px;
 }
-.menu li{
+
+menu li a{
     text-decoration: none;
     margin-right: 3em;
-    font-size: 1.3em;
-    color: rgba(255, 0, 0, 0.824);
+    color: rgb(0, 236, 253);
     font-weight: 200;
-    padding: 10px,20px;
+    padding: 10px 20px;
 }
 .menu li a:hover{
-    background-color: rgb(173, 36, 36);
-    transition: all .10s;
+    background-color: rgb(255, 153, 0);
+}
+.navbar .menu-bar{
+    color: deeppink;
+}
+.content-info{
+    margin-top: 5em;
+    color: black;
+}
+button{
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 3px 14px 8px rgba(0, 0, 0, 0.78);
+}
+button:hover{
+    box-shadow: none;
+}
+.btn-toBuy, .read-more{
+    background: none;
+    padding: 8px 40px;
+    font-size: 1.2em;
+    border-radius: 3px solid #fff;
+}
+.main{
+    background-color: #a2d2ff;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
