@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero" id="home" >
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>LX_logo</h2>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="producto.html">Products</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="formulario.html">Creat account</a></li>
+                </ul>
+                <div class="menu-bar">
+                    <i class="fas fa-bars" id="menu-bar"></i>
+                </div>
+                
+            </nav>
+              
+        </header>
+        <form class="from-contenido" action="insert.php" method="post">
+            <h1>Registro</h1>
+    
+            <label for="ciudadOrigen">
+                <span class="letra">First name</span>
+                <input type="text" name="iname">
+            </label>
+            <br>
+            <br>
+            <label for="ciudadDestino">
+                <span class="letra">Last name</span>
+                <input type="text" name="iapellido">
+            </label>
+            <br>
+            <br>
+           <label for="horaPartida">
+             <span class="letra">Email address</span>
+             <input type="email" name="iEmail">
+           </label>
+            <br>
+            <br>
+            <label for="horaLlegada">
+                <span class="letra">Password</span>
+                <input type="password" name="iContraseña">
+            </label>
+            <br>
+            <br>
+            
+            <input class="boton" type="submit" value="Registrar">
+        </form>
+       
+    </div>
+    
+</body>
+</html>
