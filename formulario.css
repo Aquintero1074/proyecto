@@ -1,88 +1,187 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
     font-family: 'Roboto', sans-serif;
 }
 
-.hero{
-    width: 100vw;
+body {
     height: 100vh;
-    background: #000000; 
-     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.884), hsla(0, 0%, 0%, 0.74)), url(../proyectohugo/img/g733-black-gallery-1\ \(1\).png);  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.884), hsla(0, 0%, 0%, 0.74)), url(../proyectohugo/img/g733-black-gallery-1\ \(1\).png); 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    max-width: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-.navbar{
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  padding: 30px;
-  
-}
-.navbar .brand{
-    color: #fff;
-    margin-top: 10px;
-}
-.navbar .menu{
-    grid-column: 6/9;
     display: flex;
-    margin-top: 10px;
-}
-.menu li{
-    list-style: none;
-}
-.menu li a{
-    text-decoration: none;
-    margin-right: 1.5em;
-    font-size: 1.3em;
-    color: rgb(247, 243, 243);
-    font-weight: 200;
-    padding: 10px 20px;
-    
-}
-.menu li a:hover{
-    background-color: #343a40;
-    transition: all .10s;
-    color: #89fc00;
-}
-.menu-bar{
-    display: none;
-}
-.from-contenido h1{
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    color: #38b000;
-    margin-top: 0;
-}
-.from-contenido{
-    width: 500px;
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 5%;
-    margin: auto;
-    margin-top: 15px;
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.letra{
-    color: #89fc00;
+    background-image: url(image/SL.123119.26540.04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
 }
 
-.boton{
-    background-color: #38b000;
-    padding: 8px 40px;
-    font-size: 1.2em;
-    border-radius: 20px;
+/* Navegación */
+
+.navegacion{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
+}
+.navegacion {
+    list-style: none;
+    padding: 0 10px;
+}
+.navegacion  li{
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+    
+}
+.navegacion  li:hover{
+    
+    transform: scale(1.1);
+}
+.navegacion  li a{
+    color:#ffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 10px;
+    transition: .3s linear;
+    text-decoration: none;
+}
+.navegacion  li a:hover{
+    
+    transform: scale(1.1);
+}
+
+/* Formulario */
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #00b4d8;
+    border-radius: 2rem;
     border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #5e60ce;
+}
+
+.formulario {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.border-icon:hover {
+    background-color: #07beb8;
+    cursor: pointer;
+}
+
+.cuenta-gratis {
+    padding: 2rem 0;
+}
+
+.formulario input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+.formulario input[type="button"] {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
 }

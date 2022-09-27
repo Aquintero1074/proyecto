@@ -7,99 +7,101 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-image: url(image/young-student-sitting-table-use-laptop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .hero{
     width: 100vw;
     height: 100vh;
-    background: #000000; 
-     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.884), hsla(0, 0%, 0%, 0.74)), url(../proyectohugo/img/g733-black-gallery-1\ \(1\).png);  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.884), hsla(0, 0%, 0%, 0.74)), url(../proyectohugo/img/g733-black-gallery-1\ \(1\).png); 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-    max-width: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+    
 }
-.navbar{
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  padding: 30px;
-  
+.brand{
+    color: black;
 }
-.navbar .brand{
-    color: #fff;
-    margin-top: 10px;
-}
-.navbar .menu{
-    grid-column: 6/9;
+.navegacion{
+    float: left;
     display: flex;
-    margin-top: 10px;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
 }
-.menu li{
+.navegacion {
     list-style: none;
+    padding: 0 10px;
 }
-.menu li a{
-    text-decoration: none;
-    margin-right: 1.5em;
-    font-size: 1.3em;
-    color: rgb(247, 243, 243);
-    font-weight: 200;
-    padding: 10px 20px;
+.navegacion  li{
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
     
 }
-.menu li a:hover{
-    background-color: #343a40;
-    transition: all .10s;
-    color: #89fc00;
+.navegacion  li:hover{
+    border-radius: 10px;
+    background-color: #fff;
+    transform: scale(1.1);
 }
-.menu-bar{
-    display: none;
+.navegacion  li a{
+    color:#000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: .3s linear;
+    text-decoration: none;
+}
+.navegacion  li a:hover{
+    color: black;
+    transform: scale(1.1);
 }
 main{
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-    align-items: center;
+    padding: 200px ;
     width: 100%;
     text-align: 70vh;
-    height: 55vh;
+    height: 24vh;
 }
 .content-info{
-    margin-top: 5em;
+    margin-top:10em;
     color: #fff;
 }
-button{
-    cursor: pointer;
-    color: #fff;
-    box-shadow: 0px 3px 14px 8px rgb(10, 10, 10, 0.78);
-}
+
 .btn-toBuy,  .read-more{
-    background-color: #38b000;
+
+    background-color: #2f3132;
     padding: 8px 40px;
     font-size: 1.2em;
     border-radius: 20px;
     border: none;
 }
 .read-more{
-    background: none;
-    border: 1px solid #fff;
+    color: #fff;
     margin: 20px;
 }
-.main img{
-    margin: 5em;
-    float: right;
-    margin-top: -22em;
-}
+
 .btn-toBuy:hover{
-    transform: scale(1.2);
+    background: none;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1.1);
 }
 .read-more:hover{
-    transform: scale(1.2);
+    background: none;
+    color: black;
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+
+.btn-toBuy a:hover{
+  color: black;
 }
 
 .btn-toBuy a{
@@ -109,6 +111,21 @@ button{
 }
 
 h1{
-    color: #89fc00;
+    
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #212529;
+    
     
 }
+
+h3{
+ 
+ font-size: 30px;
+ font-weight: 400;
+ 
+ color: #212529;
+}
+ 

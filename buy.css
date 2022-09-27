@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -9,51 +10,163 @@ body{
 
 .hero{
     width: 100vw;
-    height: 105vh;
-    background: #000000; 
-     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.884), hsla(0, 0%, 0%, 0.74)), url(../proyectohugo/img/g733-black-gallery-1\ \(1\).png);  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.884), hsla(0, 0%, 0%, 0.74)), url(../proyectohugo/img/g733-black-gallery-1\ \(1\).png); 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    max-width: 100%;
-    background-attachment: fixed;
+    height: 10vh;
+    background-image: url(image/caucasian-young-man-s-portrait-dark-studio-background-neon-concept-human-emotions-facial-expression.jpg);
+    
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
     position: relative;
 }
-.navbar{
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  padding: 30px;
-  
-}
-.navbar .brand{
+.brand{
     color: #fff;
-    margin-top: 10px;
 }
-.navbar .menu{
-    grid-column: 6/9;
+.navegacion{
+    float: left;
     display: flex;
-    margin-top: 10px;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
 }
-.menu li{
+.navegacion {
     list-style: none;
+    padding: 0 10px;
 }
-.menu li a{
-    text-decoration: none;
-    margin-right: 3em;
-    font-size: 1.3em;
-    color: rgb(247, 243, 243);
-    font-weight: 200;
-    padding: 10px 20px;
+.navegacion  li{
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+    
     
 }
-.menu li a:hover{
-    background-color: #343a40;
-    transition: all .10s;
+.navegacion  li:hover{
+    
+    background-color: #fff;
+    transform: scale(1.1);
     color: #89fc00;
 }
-.menu-bar{
-    display: none;
+.navegacion  li a{
+    color:#ffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: .3s linear;
+    text-decoration: none;
+}
+.navegacion  li a:hover{
+    
+    color: black;
+    transform: scale(1.1);
+}
+
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
+
+/* Formulario */
+
+.fondo{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(image/fondo_buy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formulario {
+    width: 1000px;
+    padding: 1rem;
+    margin: 6rem;
+    background-color: #A6D8D4;
+    text-align: center;
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+.formulario input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+}
+.formulario input[type="button"] {
+    width: 60%;
+    margin: auto;
+    
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
+.formulario input[type="button"]:hover{
+    background: none;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1.1);
+}
+
+/* footer */
+
+footer{
+    background: #2f3132;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+}
+
+.content-foo p{
+    color: #adb5bd;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #fff;
+    text-transform: uppercase;
 }

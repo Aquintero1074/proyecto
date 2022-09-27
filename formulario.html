@@ -4,63 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="formulario.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="hero" id="home" >
-        <header>
-            <nav class="navbar">
-                <div class="brand">
-                    <h2>LX_logo</h2>
+ <form action="insert.php"></form>
+    <div class="container-form sign-up">
+        <div class="hero" id="home" >
+            <header>
+                <nav class="navegacion">
+                    <div class="brand">
+                        <h2>LX_logo</h2>
+                    </div>
+                    <ul class="menu" id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="producto.html">Products</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="formulario.html">Creat account</a></li>
+                    </ul>
+                    <div class="menu-bar">
+                        <i class="fas fa-bars" id="menu-bar"></i>
+                    </div>
+                    
+                </nav>
+                  
+            </header>
+        </div>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a LX_CODE</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <button class="sign-up-btn">Iniciar Sesion</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
                 </div>
-                <ul class="menu" id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="producto.html">Products</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="buy.html">Buy</a></li>
-                    <li><a href="formulario.html">Creat account</a></li>
-                </ul>
-                <div class="menu-bar">
-                    <i class="fas fa-bars" id="menu-bar"></i>
+                <div class="border-icon">
+                    <i class='bx bxl-twitter' ></i>
                 </div>
-                
-            </nav>
-              
-        </header>
-        <form class="from-contenido" action="insert.php" method="post">
-            <h1>Registro</h1>
-    
-            <label for="ciudadOrigen">
-                <span class="letra">First name</span>
-                <input type="text" name="iname">
-            </label>
-            <br>
-            <br>
-            <label for="ciudadDestino">
-                <span class="letra">Last name</span>
-                <input type="text" name="iapellido">
-            </label>
-            <br>
-            <br>
-           <label for="horaPartida">
-             <span class="letra">Email address</span>
-             <input type="email" name="iEmail">
-           </label>
-            <br>
-            <br>
-            <label for="horaLlegada">
-                <span class="letra">Password</span>
-                <input type="password" name="iContraseña">
-            </label>
-            <br>
-            <br>
-            
-            <input class="boton" type="submit" value="Registrar">
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Registrarse">
         </form>
-       
     </div>
-    
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-twitter' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Iniciar Sesion">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+ </form>
+    <script src="formulario.js"></script>
 </body>
 </html>
